@@ -19,7 +19,7 @@ class Example(QMainWindow):
         qp = QPainter()
         qp.begin(self)
         size = random.choice(range(5, 150))
-        qp.setBrush(QColor(random.choice(range(0, 255)), random.choice(range(0, 255)), random.choice(range(0, 255))))
+        qp.setBrush(QColor('yellow'))
         qp.drawEllipse(randint(6, 700) - size // 2, randint(6, 900) - size // 2, size, size)
 
 if __name__ == '__main__':
